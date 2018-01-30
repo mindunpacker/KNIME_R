@@ -6,7 +6,7 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="script" type="xstring" value="knime.out &lt;- knime.in%%00010df &lt;- knime.in%%00010###################%%00010#clean the datafile%%00010####################%%00010columnToClean &lt;- which(colnames(df)==&quot;Likelihood_Recommend_H&quot;)%%00010cleanDF &lt;- df[complete.cases(df[,columnToClean]), ]%%00010knime.out &lt;- cleanDF%%00010"/>
+<entry key="script" type="xstring" value="knime.out &lt;- knime.in%%00010df &lt;- knime.in%%00010###################%%00010#clean the datafile%%00010####################%%00010columnToClean &lt;- which(colnames(df)==&quot;Likelihood_Recommend_H&quot;)%%00010%%00010cleanDF &lt;- df[complete.cases(df[,columnToClean]), ]%%00010knime.out &lt;- cleanDF%%00010%%00010"/>
 <entry key="templateUUID" type="xstring" isnull="true" value=""/>
 <entry key="version" type="xstring" value="version 1.x"/>
 <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
